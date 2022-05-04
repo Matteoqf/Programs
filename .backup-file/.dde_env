@@ -1,0 +1,2 @@
+# DDE user env file, bash script
+export LANG="en_US.UTF-8";

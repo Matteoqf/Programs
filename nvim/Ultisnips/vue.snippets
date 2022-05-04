@@ -1,0 +1,32 @@
+snippet cl "console.log()"
+console.log(${1})
+endsnippet
+snippet vanm "vue-animation"
+.v-enter{
+	opacity: 0;
+}
+.v-enter-to{
+	opacity: 1;
+}
+.v-enter-active{
+	transition: all 3s;
+}
+.v-leave{
+	opacity: 1;
+}
+.v-leave-to{
+	opacity: 0;
+}
+.v-leave-active{
+	transition: all 3s;
+}
+endsnippet
+snippet icl "@include"
+@include ${1:mix}($${2:val});
+endsnippet
+snippet tlt "translate(-50%,-50%)"
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+endsnippet

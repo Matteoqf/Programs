@@ -1,0 +1,254 @@
+{
+  "coc.preferences.hoverTarget": "preview",
+  "coc.preferences.enableFloatHighlight": true,
+  "coc.preferences.snippetStatusText": "Ⓢ ",
+  "coc.preferences.extensionUpdateCheck": "never",
+  "suggest.detailMaxLength": 60,
+  "suggest.noselect": true,
+  "suggest.enablePreselect": false,
+  "suggest.triggerAfterInsertEnter": false,
+  "suggest.timeout": 5000,
+  "suggest.enablePreview": true,
+  "suggest.floatEnable": true,
+  "suggest.detailField": "preview",
+  "suggest.snippetIndicator": "",
+  "suggest.triggerCompletionWait": 100,
+  "suggest.echodocSupport": true,
+  "suggest.completionItemKindLabels": {
+    "class": "\uf0e8",
+    "color": "\ue22b",
+    "constant": "\uf8fe",
+    "default": "\uf29c",
+    "enum": "\uf435",
+    "enumMember": "\uf02b",
+    "event": "\ufacd",
+    "field": "\uf93d",
+    "file": "\uf723",
+    "folder": "\uf115",
+    "function": "\u0192",
+    "interface": "\uf417",
+    "keyword": "\uf1de",
+    "method": "\uf6a6",
+    "module": "\uf40d",
+    "operator": "\uf915",
+    "property": "\ue624",
+    "reference": "\ufa46",
+    "snippet": "\ue60b",
+    "struct": "\ufb44",
+    "text": "\ue612",
+    "typeParameter": "\uf728",
+    "unit": "\uf475",
+    "value": "\uf89f",
+    "variable": "\ue71b"
+  },
+  "diagnostic.signOffset": 1,
+  "diagnostic.errorSign": "×",
+  "diagnostic.warningSign": "»",
+  "diagnostic.infoSign": "ღ",
+  "diagnostic.hintSign": "ஐ",
+  "diagnostic.displayByAle": false,
+  "diagnostic.refreshOnInsertMode": false,
+  "diagnostic.refreshAfterSave": false,
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.virtualTextPrefix": " ❯❯❯ ",
+  "diagnostic.virtualText": true,
+  "codeLens.enable": true,
+  "list.previewHighlightGroup": "Statement",
+  "list.nextKeymap": "<C-j>",
+  "list.previousKeymap": "<C-k>",
+  "snippets.ultisnips.directories": [
+    "$HOME/.config/nvim/plugged/vim-snippets/snippets/",
+    "$HOME/.config/nvim/Ultisnips/"
+
+  ],
+  "emmet.includeLanguages": {"vue": "scss"},
+  "emmet.priority": 10,
+  "suggest.languageSourcePriority": 20,
+  "snippets.priority": 30,
+  "yaml.format.enable": true,
+  "signature.target": "float",
+  "yank.enableCompletion": false,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "wxss.validate": false,
+  "eslint.enable": true,
+  "eslint.autoFix": true,
+  "eslint.autoFixOnSave": true,
+  //"eslint.options": {"configFile":".eslintrc.js"},
+  //"eslint.nodePath": "/usr/lib/node_modules",
+  "eslint.filetypes": [
+    "vue",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "stylelintplus.enable": true,
+  "stylelintplus.autoFixOnSave": true,
+  "stylelintplus.config": {
+    "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
+    "rules": {
+      "at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": ["mixin", "extend", "content", "include", "for", "function", "return"]
+        }
+      ],
+      "rule-empty-line-before": null,
+      "declaration-block-no-shorthand-property-overrides": null,
+      "no-empty-source": null,
+      "no-descending-specificity": null
+    }
+  },
+  "prettier.eslintIntegration": true,
+  "prettier.tslintIntegration": true,
+  "prettier.stylelintIntegration": true,
+  "prettier.useTabs": false,
+  "prettier.formatterPriority": 1,
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 2,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.parser": "babel",
+  "prettier.disableLanguages": [],
+  "coc.source.buffer.enable": true,
+  "coc.source.tmuxcomplete.enable": false,
+  "coc.source.around.enable": true,
+  "explorer.width": 38,
+  "explorer.quitOnOpen": true,
+  "explorer.sources": [
+    {
+      "name": "bookmark",
+      "expand": false
+    },
+    {
+      "name": "buffer",
+      "expand": false
+    },
+    {
+      "name": "file",
+      "expand": true
+    }
+  ],
+  "explorer.file.column.indent.indentLine": true,
+  "explorer.file.showHiddenFiles": true,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.file.column.git.showIgnored": true,
+  "explorer.keyMappingMode": "default",
+  "explorer.buffer.showHiddenBuffers": false,
+  "explorer.keyMappings": {
+    "<tab>": "actionMenu",
+    "h": "collapse",
+    "l": ["expandable?", "expand", "open"],
+    "J": ["toggleSelection", "nodeNext"],
+    "K": ["toggleSelection", "nodePrev"],
+    "<cr>": ["expandable?", "cd", "open"],
+    "e": "open",
+    "o": "open:split:plain",
+    "v": "open:vsplit",
+    "t": "open:tab",
+    "<bs>": "gotoParent",
+    "gp": "preview:labeling",
+    "yp": "copyFilepath",
+    "yn": "copyFilename",
+    "yy": "copyFile",
+    "dd": "cutFile",
+    "pp": "pasteFile",
+    "dD": "deleteForever",
+    "a": "addFile",
+    "A": "addDirectory",
+    "cw": "rename",
+    "zh": "toggleHidden",
+    "rr": "refresh",
+    "?": "help",
+    "q": "quit",
+    "<esc>": "esc",
+    "X": "systemExecute",
+    "f": "search",
+    "F": "searchRecursive",
+    "gf": "gotoSource:file",
+    "gb": "gotoSource:buffer",
+    "[d": "diagnosticPrev",
+      "]d": "diagnosticNext",
+      "[c": "gitPrev",
+        "]c": "gitNext",
+        "<<": "gitStage",
+        ">>": "gitUnstage"
+  },
+  "git.enableGutters": true,
+  "git.branchCharacter": "\uf408",
+  "git.addGBlameToBufferVar": false,
+  "git.addGBlameToVirtualText": false,
+  "git.virtualTextPrefix": " ❯❯❯ ",
+  "git.addedSign.hlGroup": "GitGutterAdd",
+  "git.changedSign.hlGroup": "GitGutterChange",
+  "git.removedSign.hlGroup": "GitGutterDelete",
+  "git.topRemovedSign.hlGroup": "GitGutterDelete",
+  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
+  "git.enableGlobalStatus": false,
+  "git.signOffset": 2,
+  "flutter.openDevLogSplitCommand": "botright 12split",
+  "python.autoComplete.addBrackets": true,
+  "python.jediEnabled": false,
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfArgs": [
+    "--style",
+    "{SPACES_AROUND_POWER_OPERATOR: True, SPACES_BEFORE_COMMENT: 1}"
+  ],
+  "html.format.enable": true,
+  "javascript.referencesCodeLens.enable": true,
+  "javascript.showUnused": true,
+  "javascript.suggest.names": true,
+  "javascript.suggestionActions.enabled": true,
+  "json.format.enable": true,
+  "todolist.autoUpload": true,
+  "todolist.promptForReminder": false,
+  "coc-actions.hideCursor": false,
+  "coc-actions.showActionKind": true,
+  "diagnostic-languageserver.filetypes": {
+    "vim": "vint",
+    "email": "languagetool",
+    "markdown": ["write-good", "markdownlint"],
+    "sh": "shellcheck",
+    "elixir": ["mix_credo", "mix_credo_compile"],
+    "eelixir": ["mix_credo", "mix_credo_compile"],
+    "php": ["phpstan", "psalm"]
+  },
+  "diagnostic-languageserver.formatFiletypes": {
+    "elixir": "mix_format",
+    "eelixir": "mix_format"
+  },
+  "languageserver": {
+    "lua": {
+      "command": "lua-lsp",
+      "filetypes": ["lua"]
+    },
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "gocodeCompletionEnabled": true,
+        "diagnosticsEnabled": true,
+        "lintTool": "golint"
+      }
+    },
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": []
+    },
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+      "rootPatterns": [".ccls", ".ccls-root", "compile_commands.json", ".git/", ".hg/"],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
+      }
+    }
+  }
+}
