@@ -84,6 +84,8 @@ static const char *termcmd[]     = { "st", NULL };
 
 static const char *upvolcmd[]       = { "/home/matteo/Programs/dwm/scripts/vol-up.sh",      NULL };
 static const char *downvolcmd[]     = { "/home/matteo/Programs/dwm/scripts/vol-down.sh",    NULL };
+static const char *uplight[]       = { "/home/matteo/Programs/dwm/scripts/backlight-up.sh",      NULL };
+static const char *downlight[]       = { "/home/matteo/Programs/dwm/scripts/backlight-down.sh",      NULL };
 static const char *mutevolcmd[]     = { "/home/matteo/Programs/dwm/scripts/vol-toggle.sh",  NULL };
 
 static const char *wpchangecmd[]    = { "/home/matteo/Programs/dwm/scripts/wp-change.sh",   NULL };
@@ -102,6 +104,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_w,          spawn,          SHCMD("google-chrome-stable") },
 	{ MODKEY,                       XK_d,          spawn,          {.v = dmenucmd }       },
 	{ MODKEY,                       XK_Return,     spawn,          {.v = termcmd }       },
+	{ MODKEY|ShiftMask,             XK_c,          spawn,          {.v = uplight } },
+	{ MODKEY|ShiftMask,             XK_x,          spawn,          {.v = downlight } },
 	{ MODKEY,                       XK_c,          spawn,          {.v = upvolcmd }      },
 	{ MODKEY,                       XK_x,          spawn,          {.v = downvolcmd }    },
 	{ MODKEY,                       XK_z,          spawn,          {.v = mutevolcmd }    },
